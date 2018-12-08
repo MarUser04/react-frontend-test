@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+
 import Invoice from './components/invoice';
 import Overview from './components/overview';
-
-library.add(faEnvelope, faKey);
+import DiagramMap from './components/diagram-map';
 
 class App extends Component {
   render() {
@@ -72,6 +69,7 @@ class App extends Component {
       </nav>
       
       <Invoice />
+      <DiagramMap />
       <Overview />
 
     </div>

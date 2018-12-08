@@ -1,0 +1,17 @@
+.buttons{
+  float: right;
+  padding: 15px;
+}
+
+.buttons button{
+  margin: 5px;
+}
+
+.content{
+  padding: 10px;
+}
+
+.image-map img{
+  width: 100% !important;
+  max-height: 5% !important;
+}
