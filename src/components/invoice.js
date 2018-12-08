@@ -12,7 +12,7 @@ export default class Invoice extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
-              <h4>INVOICE - REVISION</h4>
+              <h4>Invoice - Revision</h4>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default class Invoice extends Component {
                 <span>Net 0</span>
               </div>
             </td>
-            <td colspan="3" className="billSpan">
+            <td colSpan="3" className="billSpan">
               <span>Bill To</span>
             </td>
             <td>

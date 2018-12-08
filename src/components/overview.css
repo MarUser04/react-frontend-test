@@ -1,0 +1,36 @@
+h3{
+  float: left;
+  margin-left: 15px;
+}
+
+.leftTd:first-child{
+  width: 45%;
+}
+
+.row{
+  border: 1px solid #DCDCDC;
+  padding: 20px;
+}
+
+.info-left{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: left;
+}
+
+.info-right{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+span{
+  padding: 10px;
+}
+
+.status{
+  color: green
+}
