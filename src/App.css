@@ -19,7 +19,44 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #007F98;
+}
+
+.nt{
+  margin-left: 40px;
+}
+
+.borderItem{
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.nav-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right li {
+  padding-right: 30px;
+}
+
+
+.nav-right li i{
+  font-size: 20px;
+}
+
+.menu-right{
+  margin-right: 180px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #15CEF3 !important;
+}
+
+.dropdown-menu{
+  margin-right: 70px;
 }
 
 @keyframes App-logo-spin {

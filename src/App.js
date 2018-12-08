@@ -1,26 +1,74 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+
+library.add(faEnvelope, faKey);
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" href="#">Navbar</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Dashboard <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Network</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Network</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Network</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Network</a>
+            </li>
+            <li className="nav-item nt">
+              <a className="nav-link hover-item" href="#">Network</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Billing</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link hover-item" href="#">Network</a>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-collapse collapse menu-right">
+          <ul className="navbar-nav ml-auto nav-right">
+              <li className="nav-item">
+                  <i className="fa fa-search"></i>
+              </li>
+              <li className="nav-item">
+                <i className="far fa-question-circle"></i>
+              </li>
+              <li className="nav-item">
+                <i className="fas fa-bell"></i>
+              </li>
+              <div class="dropdown">
+                <button className="btn btn-secondary dropdown-toggle borderItem" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                JS
+                </button>
+                <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button className="dropdown-item" type="button">Action</button>
+                  <button className="dropdown-item" type="button">Another action</button>
+                  <button className="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
+            </ul>
+        </div>
+      </nav>
+    </div>
     );
   }
 }
