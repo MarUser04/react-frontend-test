@@ -30,14 +30,19 @@ export default class DiagramMap extends Component {
   }
 
   render() {
-    const Diagram = <h1>Diagram</h1>;
+    const Diagram =       
+    <div className="diagram-image">
+      <h5>Text</h5>
+      <img src={require("./../assets/diagram.PNG")} alt=""/>
+    </div>;
+
     const Map =     
     <div className="image-map">
       <img src={require("./../assets/map.jpg")} alt="" height="500"/>
     </div>;
 
     return (
-      <div className="diagram-map" >  
+      <div className="diagram-map"> 
         <div className="buttons">
            <button   onClick={() =>this.switchElement(1)} type="button" className="btn btn-outline-secondary">Diagram</button>
            <button   onClick={() =>this.switchElement(2)} type="button" className="btn btn-outline-secondary">Map</button>
