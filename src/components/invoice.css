@@ -1,0 +1,77 @@
+.invoiceHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.invoiceNumber{
+  margin-top: 25px;
+  padding-left: 12px;
+}
+
+.row{
+  border: 1px solid #333;
+  padding: 20px;
+}
+
+.row h4{
+  float: left;
+}
+
+.tb-col{
+  width: auto;
+  height: auto;
+  border-right: 1px solid #333;
+  line-height: auto;
+}
+
+
+.tb-col:last-child{
+  border-right: none;
+}
+
+td:first-child{
+  width: 25%;
+}
+
+.info-left{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: left;
+}
+
+.info-right{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+.billSpan{
+  width: 50%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.balanceSpan{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.balanceSpan span:first-child{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.balanceSpan span:last-child{
+  font-weight: bold;
+  font-size: 20px;
+  color: orange;
+}

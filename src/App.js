@@ -3,6 +3,8 @@ import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import Invoice from './components/invoice';
+
 
 library.add(faEnvelope, faKey);
 
@@ -55,7 +57,7 @@ class App extends Component {
               <li className="nav-item">
                 <i className="fas fa-bell"></i>
               </li>
-              <div class="dropdown">
+              <div className="dropdown">
                 <button className="btn btn-secondary dropdown-toggle borderItem" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 JS
                 </button>
@@ -68,6 +70,8 @@ class App extends Component {
             </ul>
         </div>
       </nav>
+      
+      <Invoice />
     </div>
     );
   }
