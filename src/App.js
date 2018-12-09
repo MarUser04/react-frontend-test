@@ -6,11 +6,37 @@ import Overview from './components/overview';
 import DiagramMap from './components/diagram-map';
 
 class App extends Component {
+
+  constructor(props){
+    super(props)
+
+    this.state = {
+      invoice: {
+        code: 'S03834754',
+        number: '33-0092kk00',
+        date: '7/31/18',
+        dueDate: '7/31/18',
+        terms: 'Net 0'
+      },
+      newBalance: 452.45,
+      overview: {
+        status: 'Active',
+        method: 'Multimodal',
+        capacity: 'LCL',
+        drayage: 'Pickup, Delivery',
+        incoterms: 'FOB',
+        serviceOptions: 'Deconsolidation. Custom Clearance.',
+        hazardousCommodities: 'Lithium Batteries, Hazmat, Other'
+      }
+    }
+  }
+
+
   render() {
     return (
       <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Navbar</a>
+      <img src={require("./assets/hexagon.png")} alt="" height="70"/>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -68,9 +94,9 @@ class App extends Component {
         </div>
       </nav>
       
-      <Invoice />
+      <Invoice invoice={this.state.invoice} newBalance={this.state.newBalance}/>
       <DiagramMap />
-      <Overview />
+      <Overview overview={this.state.overview}/>
 
     </div>
     );

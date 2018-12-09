@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import './overview.css';
 
 export default class Overview extends Component {
+
+  constructor(props){
+    super(props)
+  }
+
   render() {
     return (
       <div className="overview" >
@@ -14,13 +19,13 @@ export default class Overview extends Component {
                 <span>Status</span>
                 <span>Method</span>
                 <span>Capacity</span>
-                <span>Darayge</span>
+                <span>Drayage</span>
               </div>
               <div className="info-right">
-                <span className="status"> &#10003; Active</span>
-                <span>Multimodal</span>
-                <span>LCL</span>
-                <span>Pickup, Delivery</span>
+                <span className="status"> &#10003; {this.props.overview.status}</span>
+                <span>{this.props.overview.method}</span>
+                <span>{this.props.overview.capacity}</span>
+                <span>{this.props.overview.drayage}</span>
               </div>
             </td>
             <td>
@@ -30,9 +35,9 @@ export default class Overview extends Component {
                 <span>Hazardous of forbidden commodities</span>
               </div>
               <div className="info-right">
-                <span>FOB</span>
-                <span>Deconsolidation. Custom Clearance.</span>
-                <span>Lithium Batteries, Hazmat, Other</span>
+                <span>{this.props.overview.incoterms}</span>
+                <span>{this.props.overview.serviceOptions}</span>
+                <span>{this.props.overview.hazardousCommodities}</span>
               </div>
             </td>
           </tr>

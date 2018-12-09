@@ -2,12 +2,17 @@ import React, { Component } from 'react'
 import './invoice.css';
 
 export default class Invoice extends Component {
+
+  constructor(props){
+    super(props)
+  }
+
   render() {
     return (
       <div className="invoice" >
         <div className="invoiceHeader">
           <h1>Invoice</h1>
-          <p className="invoiceNumber">S03834754</p>
+          <p className="invoiceNumber">{this.props.invoice.code}</p>
         </div>
         <div className="container-fluid">
           <div className="row">
@@ -28,10 +33,10 @@ export default class Invoice extends Component {
                 <span>Terms</span>
               </div>
               <div className="info-right">
-                <span>33-0092kk00</span>
-                <span>7/31/18</span>
-                <span>7/31/18</span>
-                <span>Net 0</span>
+                <span>{this.props.invoice.number}</span>
+                <span>{this.props.invoice.date}</span>
+                <span>{this.props.invoice.dueDate}</span>
+                <span>{this.props.invoice.terms}</span>
               </div>
             </td>
             <td colSpan="3" className="billSpan">
@@ -40,7 +45,7 @@ export default class Invoice extends Component {
             <td>
               <div className="balanceSpan">
                 <span>New Balance upon Re-booking</span>
-                <span>$452.45</span>
+                <span>${this.props.newBalance}</span>
               </div>
             </td>
           </tr>
