@@ -12,7 +12,11 @@ export default class Invoice extends Component {
       <div className="invoice" >
         <div className="invoiceHeader">
           <h1>Invoice</h1>
-          <p className="invoiceNumber">{this.props.invoice.code}</p>
+          <p className="invoiceNumber">
+           <div class="toolpit">
+            <p><a href="#" data-tooltip="Invoice Number">{this.props.invoice.code}</a></p>
+          </div>
+          </p>
         </div>
         <div className="container-fluid">
           <div className="row">
