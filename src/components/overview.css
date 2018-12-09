@@ -34,3 +34,10 @@ span{
 .status{
   color: green
 }
+
+@media screen and (max-width: 930px) {  
+  td:last-child{
+    width: 65% !important;
+    font-size: 14px;
+  }
+}

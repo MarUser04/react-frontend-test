@@ -61,7 +61,7 @@ class App extends Component {
             <li className="nav-item nt">
               <a className="nav-link hover-item" href="#">Network</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item active">
               <a className="nav-link hover-item" href="#">Billing</a>
             </li>
             <li className="nav-item">
