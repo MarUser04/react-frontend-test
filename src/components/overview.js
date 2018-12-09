@@ -32,7 +32,7 @@ export default class Overview extends Component {
             <div className="info-left">
                 <span>Incoterms</span>
                 <span>Service Options</span>
-                <span>Hazardous of forbidden commodities</span>
+                <span>Hazardous or forbidden commodities</span>
               </div>
               <div className="info-right">
                 <span>{this.props.overview.incoterms}</span>

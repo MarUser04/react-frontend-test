@@ -25,7 +25,7 @@ class App extends Component {
         capacity: 'LCL',
         drayage: 'Pickup, Delivery',
         incoterms: 'FOB',
-        serviceOptions: 'Deconsolidation. Custom Clearance.',
+        serviceOptions: 'Deconsolidation. Customs Clearance.',
         hazardousCommodities: 'Lithium Batteries, Hazmat, Other'
       }
     }
